@@ -11,4 +11,9 @@
   padding: 0;
 }
 
+// 统一设置 elementplus Icons 大小
+svg {
+  width: 1em;
+  height: 1em;
+}
 </style>
