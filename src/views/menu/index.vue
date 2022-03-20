@@ -8,7 +8,7 @@
 
     <!-- 无限层级菜单（.jsx） -->
     <div style="flex: 1">
-      <l-infinite-menu
+      <!-- <l-infinite-menu
         :data="data2"
         defaultActive="2"
         active-text-color="red"
@@ -16,7 +16,7 @@
         index="b"
         icon="c"
         children="d"
-      ></l-infinite-menu>
+      ></l-infinite-menu> -->
     </div>
   </div>
 </template>

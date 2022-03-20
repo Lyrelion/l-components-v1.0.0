@@ -12,7 +12,9 @@ import * as Icons from '@element-plus/icons-vue'
 
 import { toLine } from './utils/index'
 
-import lUI from './components/index'
+// import lBusinessComponents from './components/index'
+import lBusinessComponents from '../lib/l-business-components.es.js'
+import '../lib/style.css'
 
 const app = createApp(App)
 
@@ -30,5 +32,5 @@ for (let i in Icons) {
 
 app.use(router)
 app.use(ElementPlus)
-app.use(lUI)
+app.use(lBusinessComponents)
 app.mount('#app')
