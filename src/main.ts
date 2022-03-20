@@ -1,4 +1,3 @@
-import { toLine } from './utils/index';
 import { createApp } from 'vue'
 import App from './App.vue'
 
@@ -10,6 +9,8 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 // 引入 element-plus Icon
 import * as Icons from '@element-plus/icons-vue'
+
+import { toLine } from './utils/index';
 
 const app = createApp(App)
 
