@@ -4,15 +4,16 @@
  */
 
 import { defineComponent, PropType, useAttrs } from 'vue'
-import { MenuItem } from './types'
 // 引入 element-plus Icon
 import * as Icons from '@element-plus/icons-vue'
+// 引入组件私有样式
 import './styles/index.scss'
 
 export default defineComponent({
   props: {
     // 菜单数据
     data: {
+      // 因为用户可能会自定义键名，所以此处不给他指定具体数据类型 MenuItem
       type: Array as PropType<any[]>,
       required: true,
     },
@@ -26,6 +27,9 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+
+    // ======== 允许用户自定义键名 ========
+
     // 菜单标题的键名
     name: {
       type: String,

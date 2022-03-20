@@ -22,6 +22,9 @@
 </template>
 
 <script lang="ts" setup>
+/**
+ * 下面的测试数据，用户均使用了自定义键名
+ */
 
 // 固定层数的导航菜单（最多二级）
 let data1 = [

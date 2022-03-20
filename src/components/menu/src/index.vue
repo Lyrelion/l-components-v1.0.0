@@ -17,10 +17,12 @@
 
       <!-- 二级菜单开始 -->
       <el-sub-menu v-if="item[children] && item[children].length" :index="item[index]">
+        <!-- 插槽 -->
         <template #title>
           <component v-if="item[icon]" :is="`el-icon-${toLine(item[icon])}`"></component>
           <span>{{ item[name] }}</span>
         </template>
+        <!-- 菜单开始 -->
         <el-menu-item v-for="(item1, index1) in item[children]" :key="index1" :index="item1.index">
           <component v-if="item1[icon]" :is="`el-icon-${toLine(item1[icon])}`"></component>
           <span>{{ item1[name] }}</span>
@@ -39,6 +41,7 @@ import { toLine } from '../../../utils'
 let props = defineProps({
   // 菜单数据
   data: {
+    // 因为用户可能会自定义键名，所以此处不给他指定具体数据类型 MenuItem
     type: Array as PropType<any[]>,
     required: true,
   },
@@ -52,6 +55,9 @@ let props = defineProps({
     type: Boolean,
     default: false,
   },
+
+  // ======== 允许用户自定义键名 ========
+  
   // 菜单标题的键名
   name: {
     type: String,
