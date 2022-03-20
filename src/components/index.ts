@@ -1,11 +1,13 @@
 import { App } from 'vue'
 import chooseArea from './chooseArea'
 import chooseIcon from './chooseIcon'
+import menu from './menu'
 
 // 最终在 views 下使用的组件，其实是这个 index.ts 中注册的组件
 const components = [
   chooseArea,
   chooseIcon,
+  menu,
 ]
 
 export default {
