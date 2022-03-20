@@ -32,6 +32,7 @@ import { watch, ref } from 'vue'
 import * as ElIcons from '@element-plus/icons-vue'
 
 import { toLine } from '../../../utils'
+import { useCopy } from '../../../hooks/useCopy'
 
 let props = defineProps<{
   // 弹出框的标题
@@ -57,6 +58,8 @@ let handleClick = () => {
  */
 let clickItem = (item: string) => {
   let text = `<el-icon-${toLine(item)} />`
+  // 复制文本
+  useCopy(text)
   // 关闭弹框
   dialogVisible.value = false
 }
