@@ -16,4 +16,13 @@ svg {
   width: 1em;
   height: 1em;
 }
+
+// 把所有容器的高度设置为充满屏幕
+html,
+body,
+#app,
+.el-container,
+.el-menu {
+  height: 100%;
+}
 </style>
