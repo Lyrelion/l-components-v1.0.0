@@ -4,8 +4,8 @@
     <slot></slot>
   </el-button>
 
-  <div class="m-choose-icon-dialog-body-height">
-    <!-- 图标选择器 - 弹出框 -->
+  <!-- 图标选择器 - 弹出框 -->
+  <div class="l-choose-icon-dialog-body-height">
     <el-dialog :title="title" v-model="dialogVisible">
       <div class="container">
         <div
@@ -26,8 +26,11 @@
 </template>
 
 <script lang='ts' setup>
-import * as ElIcons from '@element-plus/icons-vue'
 import { watch, ref } from 'vue'
+
+// 引入 element-plus Icon
+import * as ElIcons from '@element-plus/icons-vue'
+
 import { toLine } from '../../../utils'
 
 let props = defineProps<{
