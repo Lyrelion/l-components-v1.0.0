@@ -3,8 +3,6 @@
 </template>
 
 <script lang='ts' setup>
-// 区域选择组件
-import lChooseArea from '../../components/chooseArea/src/index.vue'
 
 /**
  * 切换地区
@@ -12,6 +10,7 @@ import lChooseArea from '../../components/chooseArea/src/index.vue'
 let changeArea = (val: any) => {
   console.log('切换地区', val)
 }
+
 </script>
 
 <style lang='scss' scoped>

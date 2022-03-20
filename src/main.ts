@@ -10,7 +10,9 @@ import 'element-plus/dist/index.css'
 // 引入 element-plus Icon
 import * as Icons from '@element-plus/icons-vue'
 
-import { toLine } from './utils/index';
+import { toLine } from './utils/index'
+
+import lUI from './components/index'
 
 const app = createApp(App)
 
@@ -28,4 +30,5 @@ for (let i in Icons) {
 
 app.use(router)
 app.use(ElementPlus)
+app.use(lUI)
 app.mount('#app')
