@@ -7,11 +7,11 @@ import menu from './src/index.vue'
 import infiniteMenu from './src/menu'
 
 menu.install = (app: App): void => {
-  app.component('LMenu', menu);
+  app.component('l-menu', menu);
 }
 
 // infiniteMenu.install = (app: App): void => {
-//   app.component('LInfiniteMenu', infiniteMenu);
+//   app.component('l-InfiniteMenu', infiniteMenu);
 // }
 
 // 让组件可以通过 app.use() 的形式使用

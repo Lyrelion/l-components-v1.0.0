@@ -15,17 +15,17 @@ const components = [
 ]
 
 const install = (app: App): void => {
-  app.component('LChooseArea', chooseArea);
-  app.component('LChooseIcon', chooseIcon);
-  app.component('LMenu', menu);
+  // app.component('LChooseArea', chooseArea);
+  // app.component('LChooseIcon', chooseIcon);
+  app.component('l-menu', menu);
   // components.forEach((component: any) => {
   //   app.component(component.name, component);
   // });
 };
 
 export {
-  chooseArea,
-  chooseIcon,
+  // chooseArea,
+  // chooseIcon,
   menu
 }
 

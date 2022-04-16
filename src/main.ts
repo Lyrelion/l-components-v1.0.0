@@ -12,9 +12,9 @@ import * as Icons from '@element-plus/icons-vue'
 
 import { toLine } from './utils/index'
 
-// import lBusinessComponents from './components/index'
-import lBusinessComponents from '../lib/l-business-components.es.js'
-import '../lib/style.css'
+import lBusinessComponents from './components/index'
+// import lBusinessComponents from '../lib/l-business-components.es.js'
+// import '../lib/style.css'
 
 const app = createApp(App)
 
